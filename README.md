@@ -30,7 +30,7 @@ A API gerencia o cadastro de quartos (CRUD) utilizando o banco de dados SQLite e
    ```
 3. Execute a API:
    ```bash
-   python app.py
+   flask run --host=0.0.0.0 --port=5000
    ```
 
 ## Como executar com Docker

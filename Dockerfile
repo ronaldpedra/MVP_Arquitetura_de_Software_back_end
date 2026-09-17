@@ -16,5 +16,8 @@ COPY . .
 # Expõe a porta que o Flask vai rodar
 EXPOSE 5000
 
-# Comando para rodar a aplicação
-CMD ["python", "app.py"]
+# Define a variável de ambiente para o Flask reconhecer o arquivo
+ENV FLASK_APP=app.py
+
+# Comando para rodar a aplicação de forma explícita com a porta 5000
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
